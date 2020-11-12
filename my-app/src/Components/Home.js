@@ -9,10 +9,9 @@ class Home extends Component {
   {/* Navigation */}
   <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div className="container">
-      <a className="navbar-brand" href="#">Start Bootstrap</a>
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon" />
-      </button>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon" />
+        </button>
       <div className="collapse navbar-collapse" id="navbarResponsive">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item active">
@@ -21,14 +20,12 @@ class Home extends Component {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">About</a>
+            <a className="nav-link" href="#">Productos</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Services</a>
+            <a className="nav-link" href="#">Nosotros</a>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">Contact</a>
-          </li>
+          
         </ul>
       </div>
     </div>
@@ -37,7 +34,7 @@ class Home extends Component {
   <div className="container">
     <div className="row">
       <div className="col-lg-3">
-        <h1 className="my-4">Shop Name</h1>
+        <h1 className="my-4">Gamer Vip</h1>
         <div className="list-group">
           <a href="#" className="list-group-item">Category 1</a>
           <a href="#" className="list-group-item">Category 2</a>
@@ -82,98 +79,7 @@ class Home extends Component {
         </Carousel.Item>
       </Carousel>
         
-        <div className="row mt-5">
-          <div className="col-lg-4 col-md-6 mb-4">
-            <div className="card h-100">
-              <a href="#"><img className="card-img-top" src="http://placehold.it/700x400" alt="" /></a>
-              <div className="card-body">
-                <h4 className="card-title">
-                  <a href="#">Item One</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-              </div>
-              <div className="card-footer">
-                <small className="text-muted">★ ★ ★ ★ ☆</small>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6 mb-4">
-            <div className="card h-100">
-              <a href="#"><img className="card-img-top" src="http://placehold.it/700x400" alt="" /></a>
-              <div className="card-body">
-                <h4 className="card-title">
-                  <a href="#">Item Two</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
-              </div>
-              <div className="card-footer">
-                <small className="text-muted">★ ★ ★ ★ ☆</small>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6 mb-4">
-            <div className="card h-100">
-              <a href="#"><img className="card-img-top" src="http://placehold.it/700x400" alt="" /></a>
-              <div className="card-body">
-                <h4 className="card-title">
-                  <a href="#">Item Three</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-              </div>
-              <div className="card-footer">
-                <small className="text-muted">★ ★ ★ ★ ☆</small>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6 mb-4">
-            <div className="card h-100">
-              <a href="#"><img className="card-img-top" src="http://placehold.it/700x400" alt="" /></a>
-              <div className="card-body">
-                <h4 className="card-title">
-                  <a href="#">Item Four</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-              </div>
-              <div className="card-footer">
-                <small className="text-muted">★ ★ ★ ★ ☆</small>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6 mb-4">
-            <div className="card h-100">
-              <a href="#"><img className="card-img-top" src="http://placehold.it/700x400" alt="" /></a>
-              <div className="card-body">
-                <h4 className="card-title">
-                  <a href="#">Item Five</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
-              </div>
-              <div className="card-footer">
-                <small className="text-muted">★ ★ ★ ★ ☆</small>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6 mb-4">
-            <div className="card h-100">
-              <a href="#"><img className="card-img-top" src="http://placehold.it/700x400" alt="" /></a>
-              <div className="card-body">
-                <h4 className="card-title">
-                  <a href="#">Item Six</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-              </div>
-              <div className="card-footer">
-                <small className="text-muted">★ ★ ★ ★ ☆</small>
-              </div>
-            </div>
-          </div>
-        </div>
+        
         {/* /.row */}
       </div>
       {/* /.col-lg-9 */}
@@ -181,10 +87,54 @@ class Home extends Component {
     {/* /.row */}
   </div>
   {/* /.container */}
+  <div className="container mx-auto mt-5">
+            <p>Objetivo
+Construir una solución de Ecommerce completa, Frontend/Backend/Base de Datos, integración con plataforma de pagos, donde podamos aplicar todo lo que estuvimos aprendiendo en la carrera Guayerd FullStack+
+
+Metodología Ágil Scrum
+(https://www.atlassian.com/es/agile/scrum)
+Aplicaremos Scrum como marco de trabajo para administrar el proyecto. Por ese motivo las tareas están agrupadas en Sprints
+
+Sprints
+(https://www.atlassian.com/es/agile/scrum/sprints)
+Dividimos el proyecto completo en 3 sprints de tiempo fijo (3 días cada uno.). La demo se realizará el día siguiente de la finalización del #3 sprint.
+
+Epics
+(https://www.atlassian.com/es/agile/project-management/epics)
+Una EPIC es una etiqueta que agrupa tareas individuales con un mismo objetivo.
+
+SETUP. Tareas relacionadas con arrancar el proyecto y crear ambientes.
+Tienda. Tareas/Historias de usuario relacionadas a la tienda que puede visitar un cliente.
+Backoffice. Tareas/Historias de usuario sobre el sitio operativo al que acceden los empleados de la tienda.
+Servicios API. Tareas sobre servicios backend necesarios para operar la tienda.
+Objetivo
+Construir una solución de Ecommerce completa, Frontend/Backend/Base de Datos, integración con plataforma de pagos, donde podamos aplicar todo lo que estuvimos aprendiendo en la carrera Guayerd FullStack+
+
+Metodología Ágil Scrum
+(https://www.atlassian.com/es/agile/scrum)
+Aplicaremos Scrum como marco de trabajo para administrar el proyecto. Por ese motivo las tareas están agrupadas en Sprints
+
+Sprints
+(https://www.atlassian.com/es/agile/scrum/sprints)
+Dividimos el proyecto completo en 3 sprints de tiempo fijo (3 días cada uno.). La demo se realizará el día siguiente de la finalización del #3 sprint.
+
+Epics
+(https://www.atlassian.com/es/agile/project-management/epics)
+Una EPIC es una etiqueta que agrupa tareas individuales con un mismo objetivo.
+
+SETUP. Tareas relacionadas con arrancar el proyecto y crear ambientes.
+Tienda. Tareas/Historias de usuario relacionadas a la tienda que puede visitar un cliente.
+Backoffice. Tareas/Historias de usuario sobre el sitio operativo al que acceden los empleados de la tienda.
+Servicios API. Tareas sobre servicios backend necesarios para operar la tienda.</p>
+  </div>
   {/* Footer */}
   <footer className="py-5 bg-dark">
     <div className="container">
       <p className="m-0 text-center text-white">Copyright © Your Website 2020</p>
+      <div className="m-0 text-center text-white">
+        <a href="#" >FaceBook</a><a href="#" className="px-3">Tweeter</a><a href="#">Instagram</a>
+      </div>
+      
     </div>
     {/* /.container */}
   </footer>
