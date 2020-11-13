@@ -1,7 +1,0 @@
-div.container {
-  width: 100%;
-  max-width: 85%;  
-  margin: 0 auto; 
-  /*aca cambiar toda la pagina el tamaño  estaba antes en 850px*/
-  text-align: justify;   /*Luis antes no estaba*/
-}

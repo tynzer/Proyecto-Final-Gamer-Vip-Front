@@ -47,7 +47,7 @@ class Home extends Component {
                   <Carousel.Item interval={1000}>
                     <img
                       className="d-block img-fluid"
-                      src="https://www.mexicoescultura.com/galerias/actividades/principal/1566318607831_festivalgamer_textura__cover_900.png"
+                      src="https://i1.wp.com/www.toptensell.com/wp-content/uploads/2020/05/best-gaming-monitor.jpg?fit=900%2C350&ssl=1"
                       alt="First slide"
                     />
                     <Carousel.Caption>
@@ -69,7 +69,7 @@ class Home extends Component {
                   <Carousel.Item>
                     <img
                       className="d-block img-fluid"
-                      src="https://www.anaitgames.com/images/uploads/2017/02/guia-perifericos-2017-01-1.jpg"
+                      src="https://i2.wp.com/www.gamingprofesional.es/wp-content/uploads/2020/06/Ratones-para-MMO.png?resize=900%2C350&ssl=1"
                       alt="Third slide"
                     />
                     <Carousel.Caption>
