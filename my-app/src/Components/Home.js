@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Carousel } from 'react-bootstrap';
+import { SocialIcon } from 'react-social-icons';
+
 //import Carousel from 'react-bootstrap'
 class Home extends Component {
   render() {
@@ -93,14 +95,17 @@ class Home extends Component {
 
             <h2>Misión</h2>
             <p>Satisfacer a nuestros mejores gamer´s con los mejores productos premium</p>
-            
+
           </div>
           {/* Footer */}
+
+          
           <footer className="py-5 bg-dark">
             <div className="container">
               <p className="m-0 text-center text-white">Copyright © Meshuggah 2020</p>
+
               <div className="m-0 text-center text-white">
-                <a href="#" >FaceBook</a><a href="#" className="px-3">Tweeter</a><a href="#">Instagram</a>
+              <SocialIcon url="https://www.facebook.com/gamer.vip.arg/" />   <SocialIcon url="https://www.instagram.com/gamer.vip.arg/" />   <SocialIcon url="https://www.twitch.tv/gamerviparg" />
               </div>
 
             </div>

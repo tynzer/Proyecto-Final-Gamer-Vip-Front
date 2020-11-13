@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { SocialIcon } from 'react-social-icons';
 
 export default class Productos extends Component {
     render() {
@@ -148,7 +149,7 @@ export default class Productos extends Component {
                         <div className="container">
                             <p className="m-0 text-center text-white">Copyright © Meshuggah 2020</p>
                             <div className="m-0 text-center text-white">
-                                <a href="#" >FaceBook</a><a href="#" className="px-3">Tweeter</a><a href="#">Instagram</a>
+                            <SocialIcon url="https://www.facebook.com/gamer.vip.arg/" />   <SocialIcon url="https://www.instagram.com/gamer.vip.arg/" />   <SocialIcon url="https://www.twitch.tv/gamerviparg" />
                             </div>
 
                         </div>
