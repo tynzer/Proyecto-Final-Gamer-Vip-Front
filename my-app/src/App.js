@@ -30,6 +30,7 @@ class App extends Component {
 
   render() {
     return (
+<<<<<<< HEAD
       <Router>
         <NavBar/>
         <Header/>
@@ -41,6 +42,11 @@ class App extends Component {
         </Switch>
         <Footer/>
       </Router>
+=======
+      <div>
+        <Home/>
+
+>>>>>>> 1421120ca6a8c0585136f5262a3c5166f9432876
 
     );
   }
