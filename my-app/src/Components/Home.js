@@ -47,18 +47,18 @@ class Home extends Component {
                   <Carousel.Item interval={1000}>
                     <img
                       className="d-block img-fluid"
-                      src="http://placehold.it/900x350"
+                      src="https://www.mexicoescultura.com/galerias/actividades/principal/1566318607831_festivalgamer_textura__cover_900.png"
                       alt="First slide"
                     />
                     <Carousel.Caption>
-                      <h3>First slide label</h3>
-                      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                      <h3>El unico lugar</h3>
+                      <p>DONDE VIVIS TU PASION</p>
                     </Carousel.Caption>
                   </Carousel.Item>
                   <Carousel.Item interval={500}>
                     <img
                       className="d-block img-fluid"
-                      src="http://placehold.it/900x350"
+                      src="https://terrymcfly.com/wp-content/uploads/2019/04/A40TR_Standalone_Image_1-900x350.jpg"
                       alt="Second slide"
                     />
                     <Carousel.Caption>
@@ -69,7 +69,7 @@ class Home extends Component {
                   <Carousel.Item>
                     <img
                       className="d-block img-fluid"
-                      src="http://placehold.it/900x350"
+                      src="https://www.anaitgames.com/images/uploads/2017/02/guia-perifericos-2017-01-1.jpg"
                       alt="Third slide"
                     />
                     <Carousel.Caption>
@@ -87,13 +87,13 @@ class Home extends Component {
             {/* /.row */}
           </div>
           {/* /.container */}
-          <div className="container mx-auto mt-5">
-            <p>vision:
-            ser referentes en el gaming de alta performance
+          <div className="m-0 text-center">
+            <h2>Visión</h2>
+            <p> Ser referentes en el gaming de alta performance</p>
 
-              mision:
-            satisfacer a nuestros mejores gamer´s con los mejores productos premium
-            </p>
+            <h2>Misión</h2>
+            <p>Satisfacer a nuestros mejores gamer´s con los mejores productos premium</p>
+            
           </div>
           {/* Footer */}
           <footer className="py-5 bg-dark">
