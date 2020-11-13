@@ -52,7 +52,7 @@ class Home extends Component {
                     />
                     <Carousel.Caption>
                       <h3>El unico lugar</h3>
-                      <p>DONDE VIVIS TU PASION</p>
+                      <p>Donde vivis tu pasion</p>
                     </Carousel.Caption>
                   </Carousel.Item>
                   <Carousel.Item interval={500}>
