@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import Maqueta from './Components/Maqueta';
+//import Maqueta from './Components/Maqueta';
 import Home from './Components/Home';
 import Productos from './Components/Productos';
 import Nosotros from './Components/Nosotros';
-import Switch from 'react-bootstrap/esm/Switch';
-import Footer from './Components/Footer'
-import NotFound from "./Components/NotFound"
-import NavBar from "./Components/NavBar"
+import Footer from './Components/Footer';
+import NotFound from "./Components/NotFound";
+import NavBar from "./Components/NavBar";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 class App extends Component {
@@ -17,23 +16,20 @@ class App extends Component {
       url:""
     }
   }
-  componentDidMount(){
+/*  componentDidMount(){
 
     fetch(`${this.state.url}productList`)
     .then((res) => res.json())
-        .then(
+    .then(
             (productList) => {
                 this.setState({ productList: productList });
             }
-        )
-
-
-  render() {
+        )};
+  */
+    render() {
     return (
-<<<<<<< HEAD
       <Router>
         <NavBar/>
-        <Header/>
         <Switch>
           <Route exact path="/"><Home/></Route>
           <Route path="/productos"><Productos/></Route>
@@ -42,12 +38,6 @@ class App extends Component {
         </Switch>
         <Footer/>
       </Router>
-=======
-      <div>
-        <Home/>
-
->>>>>>> 1421120ca6a8c0585136f5262a3c5166f9432876
-
     );
   }
 }
