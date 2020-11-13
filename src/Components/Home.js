@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Carousel } from 'react-bootstrap';
+import Banner from './Banner';
+import Categorias from './Categorias';
 
 //import Carousel from 'react-bootstrap'
 class Home extends Component {
@@ -10,51 +11,10 @@ class Home extends Component {
           {/* Page Content */}
           <div className="container">
             <div className="row">
-              <div className="col-lg-3">
-                <h1 className="my-4">Gamer Vip</h1>
-                <div className="list-group">
-                  <a href="#" className="list-group-item">Category 1</a>
-                  <a href="#" className="list-group-item">Category 2</a>
-                  <a href="#" className="list-group-item">Category 3</a>
-                </div>
-              </div>
+             <Categorias/>
               {/* /.col-lg-3 */}
               <div className="col-lg-9 mt-5">
-                <Carousel >
-                  <Carousel.Item interval={1000}>
-                    <img
-                      className="d-block img-fluid"
-                      src="https://i1.wp.com/www.toptensell.com/wp-content/uploads/2020/05/best-gaming-monitor.jpg?fit=900%2C350&ssl=1"
-                      alt="First slide"
-                    />
-                    <Carousel.Caption>
-                      <h3>El unico lugar</h3>
-                      <p>Donde vivis tu pasion</p>
-                    </Carousel.Caption>
-                  </Carousel.Item>
-                  <Carousel.Item interval={500}>
-                    <img
-                      className="d-block img-fluid"
-                      src="https://terrymcfly.com/wp-content/uploads/2019/04/A40TR_Standalone_Image_1-900x350.jpg"
-                      alt="Second slide"
-                    />
-                    <Carousel.Caption>
-                      <h3>Headset</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img
-                      className="d-block img-fluid"
-                      src="https://i2.wp.com/www.gamingprofesional.es/wp-content/uploads/2020/06/Ratones-para-MMO.png?resize=900%2C350&ssl=1"
-                      alt="Third slide"
-                    />
-                    <Carousel.Caption>
-                      <h3>Mouse MMO</h3>
-                      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </Carousel.Caption>
-                  </Carousel.Item>
-                </Carousel>
+                 <Banner/>
                 {/* /.row */}
               </div>
               {/* /.col-lg-9 */}
