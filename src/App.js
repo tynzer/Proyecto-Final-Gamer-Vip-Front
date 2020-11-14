@@ -32,7 +32,7 @@ class App extends Component {
         <NavBar/>
         <Switch>
           <Route exact path="/"><Home/></Route>
-          <Route path="/productos"><Productos/></Route>
+          <Route path="/productos/:categoria?" component={Productos}></Route>
           <Route path="/nosotros"><Nosotros/></Route>
           <Route path="*"><NotFound/></Route>
         </Switch>

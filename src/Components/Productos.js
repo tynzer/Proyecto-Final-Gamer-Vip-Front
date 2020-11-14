@@ -2,6 +2,11 @@ import React, { Component } from 'react'
 import Categorias from './Categorias'
 
 export default class Productos extends Component {
+    constructor(props) {
+        super(props);
+        console.log(this)
+    }
+    
     render() {
         return (
             <div>
