@@ -49,7 +49,7 @@ class App extends Component {
       <Router>
         <NavBar/>
         <Switch>
-          <Route exact path="/"><Home carousel={this.state.carousel}/></Route>
+          <Route exact path="/"><Home carousel={this.state.carousel} categorias={this.state.categorias}/></Route>
           {/*<Route path="/productos/:categoria?" component={Productos}></Route>*/}
           <Route path="/productos" ><Productos productos={this.state.productos} categorias={this.state.categorias}/></Route>
           <Route path="/nosotros"><Nosotros/></Route>

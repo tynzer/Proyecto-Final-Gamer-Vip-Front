@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Categorias from './Categorias'
-import Producto from './Producto';
+/* import Producto from './Producto'; */
 
 export default class Productos extends Component {
     constructor(props) {
@@ -14,12 +14,12 @@ export default class Productos extends Component {
                 <div className="pt-5">
                     <div className="container">
                         <div className="row">
-                            <Categorias/>
+                            <Categorias categorias={this.props.categorias}/>
                             <div className="col-lg-9 mt-5">
                                 <div className="row mt-5">
                                     {this.props.productos.map(producto => { 
                                         return(
-                                            <div className="col-lg-4 col-md-6 mb-4">
+                                            <div key={producto._id} className="col-lg-4 col-md-6 mb-4">
                                                 <div className="card h-100">
                                                     <img className="card-img-top" src={producto.linkImagen} alt="" />
                                                     <div className="card-body">
