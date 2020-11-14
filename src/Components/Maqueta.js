@@ -1,3 +1,8 @@
+/**
+  * ESTE COMPONENTE ESTA PARA VOLVER A LA MAQUETA ORIGINAL POR SI ACASO
+  * 
+  * 
+  *  */ 
 import React, { Component } from 'react';
 import { Carousel } from 'react-bootstrap';
 //import Carousel from 'react-bootstrap'

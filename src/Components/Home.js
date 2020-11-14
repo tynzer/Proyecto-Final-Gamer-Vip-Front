@@ -2,31 +2,25 @@ import React, { Component } from 'react';
 import Banner from './Banner';
 import Categorias from './Categorias';
 
-//import Carousel from 'react-bootstrap'
 class Home extends Component {
   render() {
     return (
       <div>
         <div className="pt-5">
-          {/* Page Content */}
           <div className="container">
             <div className="row">
              <Categorias/>
-              {/* /.col-lg-3 */}
               <div className="col-lg-9 mt-5">
-                 <Banner/>
-                {/* /.row */}
+                 <Banner carousel={this.props.carousel}/>
               </div>
-              {/* /.col-lg-9 */}
             </div>
-            {/* /.row */}
           </div>
-          {/* /.container */}
-          <div className="m-0 text-center">
+          <div className="m-0 text-center pt-5" style={{height: '400px'}}>
             <h2>Visión</h2>
             <p> Ser referentes en el gaming de alta performance</p>
             <h2>Misión</h2>
-            <p>Satisfacer a nuestros mejores gamer´s con los mejores productos premium</p>
+            <p>Satisfacer las necesidades de nuestros mejores gamer´s con los mejores productos premium del mercado 
+              para que puedan vivir al máximo la experiencia Gamer Vip</p>
           </div>
         </div>
       </div>
