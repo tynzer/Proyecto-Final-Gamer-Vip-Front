@@ -43,7 +43,9 @@ class App extends Component {
   }
  
   renderProductos = routerProps => {
-    let categoriaProductos = routerProps.match.params.categoria
+    let categoriaRouterProps = routerProps.match.params.categoria
+    let categoriaProductos = categoriaRouterProps.replace(/-/g, " ");
+   console.log(categoriaProductos)
     let filterProductos = this.state.productos.filter(producto => producto.categoria === categoriaProductos)
     return ( filterProductos ? <CategoriaProductos productos={filterProductos} categorias={this.state.categorias} /> : <NotFound/>)
     }
