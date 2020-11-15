@@ -10,21 +10,19 @@ export default class Nosotros extends Component {
 
             <h1 className="my-4">Gamer Vip</h1>
 
+            <h3>Nosotros</h3>
+            <p>En GamerVip buscamos destacar por nuestro conocimiento e intentamos establecernos como la opción ideal para sus compras de tecnología. <br />
+              Todos nuestros vendedores se encuentran altamente capacitados para asesorarlo y ofrecerle exactamente lo que necesita.<br />
+              GamerVip es una tienda con más 17 años dentro del rubro tecnológico en Argentina. <br /> 
+              Conocemos nuestros productos y por ello te asesoramos para que hagas una compra personalizada a la altura de tus necesidades.<br />
 
-            <p>Objetivo
-            Construir una solución de Ecommerce completa, Frontend/Backend/Base de Datos, integración con plataforma de pagos, donde podamos aplicar todo lo que estuvimos aprendiendo en la carrera Guayerd FullStack+
-
-            Metodología Ágil Scrum
-            (https://www.atlassian.com/es/agile/scrum)
-            Aplicaremos Scrum como marco de trabajo para administrar el proyecto. Por ese motivo las tareas están agrupadas en Sprints
-
-            Sprints
-            (https://www.atlassian.com/es/agile/scrum/sprints)
-            Dividimos el proyecto completo en 3 sprints de tiempo fijo (3 días cada uno.). La demo se realizará el día siguiente de la finalización del #3 sprint.
-
-            Epics
-            (https://www.atlassian.com/es/agile/project-management/epics)
-            Una EPIC es una etiqueta que agrupa tareas individuales con un mismo objetivo.
+              <h3>Nuestro público</h3>
+              -Particular: nos especializamos en entusiastas de GamerVip y hardware de alta gama.<br />
+               De igual forma, tenemos equipos y piezas para cubrir cualquier necesidad o requerimiento.<br />
+              -Corporativo: brindamos soluciones a la medida de cada empresa.<br /> 
+               Productos de alta calidad, atención inmediata en licencia y soporte.<br />
+              -Revendedores: queremos que crezcas con nosotros, para ello disponemos de descuentos especiales pensando en tu beneficio.<br /> <br />
+              <h5>Gracias a tú confianza vamos a ser la Tienda Gamer número 1 de Argentina.</h5>
             </p>
             <h2>Mapa</h2>
                 <p className="h5">Avenida Corrientes 6237, CABA.</p> 

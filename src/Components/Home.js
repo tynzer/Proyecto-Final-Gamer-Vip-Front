@@ -16,11 +16,10 @@ class Home extends Component {
             </div>
           </div>
           <div className="m-0 text-center pt-5" style={{height: '400px'}}>
-            <h2>Visión</h2>
-            <p> Ser referentes en el gaming de alta performance</p>
-            <h2>Misión</h2>
-            <p>Satisfacer las necesidades de nuestros mejores gamer´s con los mejores productos premium del mercado 
-              para que puedan vivir al máximo la experiencia Gamer Vip</p>
+            <h3>No podrás encontrar mejor precio. </h3>
+            
+            <h3>Somos diferente, original y único. </h3>
+            
           </div>
         </div>
       </div>
