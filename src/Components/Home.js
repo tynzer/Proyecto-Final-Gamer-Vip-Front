@@ -18,7 +18,7 @@ class Home extends Component {
           <div className="m-0 text-center pt-5" style={{height: '400px'}}>
             <h3>No podrás encontrar mejor precio. </h3>
             
-            <h3>Somos diferente, original y único. </h3>
+            <h3>Somos diferentes, originales y únicos. </h3>
             
           </div>
         </div>
