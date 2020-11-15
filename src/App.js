@@ -6,56 +6,61 @@ import Nosotros from './Components/Nosotros';
 import Footer from './Components/Footer';
 import NotFound from "./Components/NotFound";
 import NavBar from "./Components/NavBar";
+import CategoriaProductos from "./Components/CategoriaProductos"
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 class App extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state={
-      url:"https://proyecto-final-gamer-vip-back.herokuapp.com/",
-      productos:[],
-      categorias:[],
-      carousel:[]
+    this.state = {
+      url: "https://proyecto-final-gamer-vip-back.herokuapp.com/",
+      productos: [],
+      categorias: [],
+      carousel: []
     }
   }
 
-  componentDidMount(){
+  componentDidMount() {
 
     fetch(`${this.state.url}productos`)
-    .then(res => res.json())
-    .then(productos => {
-      this.setState({ productos: productos });
-      console.log("productos; ", productos)
-    })
-  
+      .then(res => res.json())
+      .then(productos => {
+        this.setState({ productos: productos });
+      })
+
     fetch(`${this.state.url}categorias`)
-    .then(res => res.json())
-    .then(categorias => {
-      this.setState({ categorias: categorias });
-      console.log("categorias; ", categorias)
-    })
+      .then(res => res.json())
+      .then(categorias => {
+        this.setState({ categorias: categorias });
+        console.log("categorias; ", categorias)
+      })
 
     fetch(`${this.state.url}carousel`)
-    .then(res => res.json())
-    .then(carousel => {
-      this.setState({ carousel: carousel });
-      console.log("carousel; ", carousel)
-    })
-  
+      .then(res => res.json())
+      .then(carousel => {
+        this.setState({ carousel: carousel });
+      })
   }
-  
-    render() {
+ 
+  renderProductos = routerProps => {
+    let categoriaProductos = routerProps.match.params.categoria
+    let filterProductos = this.state.productos.filter(producto => producto.categoria === categoriaProductos)
+    return ( filterProductos ? <CategoriaProductos productos={filterProductos} categorias={this.state.categorias} /> : <NotFound/>)
+    }
+   
+
+  render() {
     return (
       <Router>
-        <NavBar/>
+        <NavBar />
         <Switch>
-          <Route exact path="/"><Home carousel={this.state.carousel} categorias={this.state.categorias}/></Route>
-          {/*<Route path="/productos/:categoria?" component={Productos}></Route>*/}
-          <Route path="/productos" ><Productos productos={this.state.productos} categorias={this.state.categorias}/></Route>
-          <Route path="/nosotros"><Nosotros/></Route>
-          <Route path="*"><NotFound/></Route>
+          <Route exact path="/"><Home carousel={this.state.carousel} categorias={this.state.categorias} /></Route>
+          <Route exact path="/productos" ><Productos productos={this.state.productos} categorias={this.state.categorias} /></Route>
+          <Route path="/productos/:categoria" /* component={CategoriaProductos} */ render={this.renderProductos}></Route>  
+          <Route path="/nosotros"><Nosotros /></Route>
+         <Route component={NotFound}/>{/*  <Route path="*"><NotFound /></Route> */}
         </Switch>
-        <Footer/>
+        <Footer />
       </Router>
     );
   }
