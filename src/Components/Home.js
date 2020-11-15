@@ -9,7 +9,7 @@ class Home extends Component {
         <div className="pt-5">
           <div className="container">
             <div className="row">
-             <Categorias/>
+             <Categorias categorias={this.props.categorias}/>
               <div className="col-lg-9 mt-5">
                  <Banner carousel={this.props.carousel}/>
               </div>
