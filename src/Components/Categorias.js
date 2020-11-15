@@ -7,8 +7,11 @@ class Categorias extends Component {
             <div className="col-lg-3">
                 <h1 className="my-4">Gamer Vip</h1>
                 <div className="list-group">
-                    { this.props.categorias.map(categoria =>{return(
-                             <NavLink key={categoria._id} to={"/productos/"+ categoria.categoria} className="list-group-item">{categoria.categoria}</NavLink>
+                    { this.props.categorias.map(categoria =>{
+                        let categoriaTrim = categoria.categoria.trim();
+                        let categoriaReplace = categoriaTrim.replace(/\s/g, "-");
+                        return(
+                             <NavLink key={categoria._id} to={"/productos/"+ categoriaReplace} className="list-group-item">{categoria.categoria}</NavLink>
                     )
                     })}
                  {/*    <NavLink to="/productos/categoria1" className="list-group-item">Category 1</NavLink>
