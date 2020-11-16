@@ -32,7 +32,6 @@ class App extends Component {
       .then(res => res.json())
       .then(categorias => {
         this.setState({ categorias: categorias });
-        console.log("categorias; ", categorias)
       })
 
     fetch(`${this.state.url}carousel`)
@@ -45,7 +44,6 @@ class App extends Component {
   renderProductos = routerProps => {
     let categoriaRouterProps = routerProps.match.params.categoria
     let categoriaProductos = categoriaRouterProps.replace(/-/g, " ");
-   console.log(categoriaProductos)
     let filterProductos = this.state.productos.filter(producto => producto.categoria === categoriaProductos)
     return ( filterProductos ? <CategoriaProductos productos={filterProductos} categorias={this.state.categorias} /> : <NotFound/>)
     }

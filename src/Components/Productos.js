@@ -3,11 +3,7 @@ import Categorias from './Categorias'
 /* import Producto from './Producto'; */
 
 export default class Productos extends Component {
-    constructor(props) {
-        super(props);
-        console.log(this)
-    }
-    
+       
     render() {
         return (
             <div>
