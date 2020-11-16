@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import logo from '../logo2.svg'
 
 class Categorias extends Component {
     render() {
         return (
             <div className="col-lg-3">
-                <h1 className="my-4">Gamer Vip</h1>
+                <div className="text-center" >
+                <img src={logo} alt="Logo" className="text-center"  />
+               {/*  <h1 className="my-4">Gamer Vip</h1> */}
+               </div>
                 <div className="list-group">
                     { this.props.categorias.map(categoria =>{
                         let categoriaTrim = categoria.categoria.trim();
