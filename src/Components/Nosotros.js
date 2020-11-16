@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import logo from '../logo_largo.svg'
+/* import logo from '../logo_largo.svg' */
+import logo1 from '../logo_largo1.svg'
 import '../map.css'
 
 export default class Nosotros extends Component {
@@ -9,7 +10,7 @@ export default class Nosotros extends Component {
         <div className="m-auto">
 
           <div className="container">
-            <img src={logo} alt="Logo" className="text-center mt-5 pt-5" />
+            <img src={logo1} alt="Logo" className="text-center mt-5 pt-5" />
             {/* <h1 className="my-4">Gamer Vip</h1> */}
 
             <h3>Nosotros</h3>
