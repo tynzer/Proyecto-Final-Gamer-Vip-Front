@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import logo from '../logo_largo3.svg'
 
 export default class Nosotros extends Component {
   render() {
@@ -7,8 +8,8 @@ export default class Nosotros extends Component {
         <div className="pt-5">
 
           <div className="container">
-
-            <h1 className="my-4">Gamer Vip</h1>
+          <img src={logo} alt="Logo" className="text-center"  />
+          {/*<h1 className="my-4">Gamer Vip</h1>*/}
 
             <h3>Nosotros</h3>
             <p>En GamerVip buscamos destacar por nuestro conocimiento e intentamos establecernos como la opción ideal para sus compras de tecnología. <br />
@@ -17,7 +18,7 @@ export default class Nosotros extends Component {
               Conocemos nuestros productos y por ello te asesoramos para que hagas una compra personalizada a la altura de tus necesidades.<br />
 
               <h3>Nuestro público</h3>
-              -Particular: nos especializamos en entusiastas de GamerVip y hardware de alta gama.<br />
+              -Particular: nos especializamos en entusiastas Gamers y hardware de alta gama.<br />
                De igual forma, tenemos equipos y piezas para cubrir cualquier necesidad o requerimiento.<br />
               -Corporativo: brindamos soluciones a la medida de cada empresa.<br /> 
                Productos de alta calidad, atención inmediata en licencia y soporte.<br />
