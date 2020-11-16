@@ -6,7 +6,7 @@ class NotFound extends Component {
         return (
             <div className="travolta">
                 <h1 >404</h1>
-                <p>It seems you got lost...</p>
+                <p>Ups... Game Over - Volve a Intentar</p>
             </div>
         );
     }
