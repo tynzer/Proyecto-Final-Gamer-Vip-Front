@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../logo2.svg';
+import logo from '../joystick_logo.svg';
 
 
 class NavBar extends Component {
@@ -8,9 +8,9 @@ class NavBar extends Component {
         return (
             < nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" >
                 <div className="container">
-             {/*    <NavLink className="navbar-brand" to="/"> 
-                 <img src={logo} alt="Logo" className="d-inline-block align-top"/>Gamer VIP
-                </NavLink>    */}    
+              <NavLink className="navbar-brand " to="/"> <span style={{fontSize:'1.85rem'}}>Gamer VIP </span>
+                 <img src={logo} alt="Logo" className="d-inline-block align-top"/>
+                </NavLink>       
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon" />
                     </button>
