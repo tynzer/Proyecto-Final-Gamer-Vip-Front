@@ -3,7 +3,7 @@ import Banner from './Banner';
 import Categorias from './Categorias';
 import './styles/home.css'
 import Whatsapp from "./Whatsapp";
-
+import Banner2 from './Banner2'
 class Home extends Component {
   render() {
     return (
@@ -14,8 +14,11 @@ class Home extends Component {
             <div className="col-lg-14 mt-5">
               <Banner carousel={this.props.carousel} />
             </div>
-{/*             <div><Whatsapp/></div> */}
           </div>
+          <div>
+          <Banner2/>
+          </div>
+
 
           <div className="m-0 text-center pt-5" style={{ height: '750px' }}>
             <h3 className="home-fuente">LOS MEJORES PRODUCTOS </h3>
