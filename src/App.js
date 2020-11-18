@@ -8,6 +8,8 @@ import NotFound from "./Components/NotFound";
 import NavBar from "./Components/NavBar";
 import CategoriaProductos from "./Components/CategoriaProductos"
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Redes from "./Components/Redes"
+import Whatsapp from "./Components/Whatsapp"
 
 class App extends Component {
   constructor(props) {
@@ -52,7 +54,9 @@ class App extends Component {
   render() {
     return (
       <Router>
+        <Redes/>
         <NavBar />
+        <Whatsapp/>
         <Switch>
           <Route exact path="/"><Home carousel={this.state.carousel} categorias={this.state.categorias} /></Route>
           <Route exact path="/productos" ><Productos productos={this.state.productos} categorias={this.state.categorias} /></Route>
@@ -61,6 +65,7 @@ class App extends Component {
          <Route component={NotFound}/>{/*  <Route path="*"><NotFound /></Route> */}
         </Switch>
         <Footer />
+
       </Router>
     );
   }

@@ -1,0 +1,19 @@
+
+.categorias-borde{
+    background-color:rgb(255, 255, 255);
+    border: 7px solid transparent;
+    border-image: linear-gradient(to bottom right, #4027fc 0%, #2c90fc 25%, #33bafd 50%, #fe37dd 75%, #fd1892 100%);
+    border-image-slice: 1;
+
+
+}
+
+.categorias-mayuscula{
+    text-transform: uppercase;
+    font-size: 16px;
+
+}
+
+/*
+    border-radius: 10px;
+*/

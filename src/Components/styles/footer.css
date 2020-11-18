@@ -1,0 +1,28 @@
+.footer-fondo {
+    
+  background-image: linear-gradient(to left, #ff0000, #ff0040, #ff006e, #f6009a, #d500c3, #b800b8, #9b00ad, #7f00a0, #6e0068, #51013c, #2e0a1d, #000000);
+ 
+}
+
+/*
+.footer-borde {
+    background-color: #302244;
+    border: 7px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+  }
+*/
+
+
+
+  /*
+.footer-fondo {
+    background: rgb(255,0,0);
+    background: -moz-linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(60,0,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(60,0,255,1) 100%);
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(60,0,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0000",endColorstr="#3c00ff",GradientType=1); 
+}
+
+  */
+

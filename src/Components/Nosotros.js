@@ -1,24 +1,27 @@
 import React, { Component } from 'react'
-import logo from '../logo_largo3.svg'
+/* import logo from '../logo_largo.svg' */
+import logo1 from '../logo_largo1.svg'
+import '../map.css'
+import './styles/nosotros.css'
 
 export default class Nosotros extends Component {
   render() {
     return (
-      <div>
+      <div className="nosotros-fondo ">
         <div className="m-auto">
 
           <div className="container">
-          <img src={logo} alt="Logo" className="text-center"  />
-          {/*<h1 className="my-4">Gamer Vip</h1>*/}
+            <img src={logo1} alt="Logo" className="text-center mt-5 pt-5" />
+            {/* <h1 className="my-4">Gamer Vip</h1> */}
 
-            <h3>Nosotros</h3>
-            <p>En GamerVip buscamos destacar por nuestro conocimiento e intentamos establecernos como la opción ideal para sus compras de tecnología. <br />
+            <h3 className="nosotros-h3-formato">Nosotros</h3>
+            <p className="nosotros-p-formato">En GamerVip buscamos destacar por nuestro conocimiento e intentamos establecernos como la opción ideal para sus compras de tecnología. <br />
               Todos nuestros vendedores se encuentran altamente capacitados para asesorarlo y ofrecerle exactamente lo que necesita.<br />
               GamerVip es una tienda con más 17 años dentro del rubro tecnológico en Argentina. <br />
               Conocemos nuestros productos y por ello te asesoramos para que hagas una compra personalizada a la altura de tus necesidades.<br />
-
-              <h3>Nuestro público</h3>
-              -Particular: nos especializamos en entusiastas Gamers y hardware de alta gama.<br />
+            </p>
+            <h3 className="nosotros-h3-formato">Nuestro público</h3>
+            <p className="nosotros-p-formato">-Particular: nos especializamos en entusiastas de GamerVip y hardware de alta gama.<br />
                De igual forma, tenemos equipos y piezas para cubrir cualquier necesidad o requerimiento.<br />
               -Corporativo: brindamos soluciones a la medida de cada empresa.<br />
                Productos de alta calidad, atención inmediata en licencia y soporte.<br />

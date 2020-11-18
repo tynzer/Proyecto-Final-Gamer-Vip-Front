@@ -1,0 +1,29 @@
+
+.productos-borde{
+    background-color:rgb(255, 255, 255);
+    border: 7px solid transparent;
+    border-image: linear-gradient(to bottom right, #4027fc 0%, #2c90fc 25%, #33bafd 50%, #fe37dd 75%, #fd1892 100%);
+    border-image-slice: 1;
+}
+
+.productos-fondo{
+    background: rgb(0,130,255);
+    background: radial-gradient(circle, rgba(0,130,255,1) 13%, rgba(0,0,0,1) 100%);
+}
+
+
+
+
+
+.productos-item-fondo{
+    background-image: linear-gradient(to top, #ffffff, #f8f8ff, #f0f1ff, #e7eaff, #dce4ff, #dce4ff, #dce4ff, #dce4ff, #e7eaff, #f0f1ff, #f8f8ff, #ffffff);
+}
+    
+
+
+
+.productos-estrellas{
+    color: rgb(190, 184, 10);
+    font-size: 27px;
+
+}

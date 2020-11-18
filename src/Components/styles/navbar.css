@@ -1,0 +1,33 @@
+.navbar-fondo{
+    background-image: linear-gradient(to left, #ff0000, #ff0040, #ff006e, #f6009a, #d500c3, #b800b8, #9b00ad, #7f00a0, #6e0068, #51013c, #2e0a1d, #000000);
+}
+
+.navbar-font-logo{
+    font-family: 'Fugaz One', cursive;
+}
+
+.navbar-letras{
+    font-weight: 900;
+    color: yellow;
+}
+
+.navbar-bordes{
+    border: 3px solid white;
+    border-radius: 5px;
+
+}
+
+.header-margin{
+    margin-top: 0px;
+}
+
+
+/*
+.navbar-fondo{
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,0,253,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,0,253,1) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,0,253,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ff00fd",GradientType=1); 
+}
+*/

@@ -7,8 +7,7 @@ export default class CategoriaProductos extends Component {
     render() {
         return (
             <div>
-                <div className="pt-5">
-                    <div className="container">
+                    <div className=" container-fluid">
                         <div className="row">
                             <Categorias categorias={this.props.categorias}/>
                             <div className="col-lg-9 mt-5">
@@ -35,7 +34,6 @@ export default class CategoriaProductos extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
         );
     }

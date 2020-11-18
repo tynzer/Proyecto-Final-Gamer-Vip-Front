@@ -1,0 +1,48 @@
+.home-fondo{
+    background: rgb(0,130,255);
+    background: radial-gradient(circle, rgba(0,130,255,1) 13%, rgba(0,0,0,1) 100%);
+}
+
+/*
+.home-header-margin{
+    margin-top: 50px;
+}
+*/
+
+
+.home-fuente{
+    font-family: 'Fugaz One', cursive;
+    letter-spacing: 4px;
+    font-size: 45px;
+    color: #FFFFFF;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+}
+
+
+
+.home-fuente-dos{
+    font-family: 'Fugaz One', cursive;
+    letter-spacing: 4px;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+}
+
+
+
+/*
+.home-fondo{
+    background: rgb(0,130,255);
+    background: radial-gradient(circle, rgba(0,130,255,1) 13%, rgba(0,0,0,1) 100%);
+}
+
+.home-fondo{
+    background-image: linear-gradient(to right bottom, #ff0091, #f500a3, #e500b6, #cf00cb, #b000e0, #9f00ca, #8f00b5, #7f00a0, #6e0068, #51013c, #2e0a1d, #000000);
+}
+
+.home-fondo{
+    background-image: linear-gradient(to right bottom, #ff0000, #ff0040, #ff006e, #f6009a, #d500c3, #b800b8, #9b00ad, #7f00a0, #6e0068, #51013c, #2e0a1d, #000000);
+}
+
+
+*/
