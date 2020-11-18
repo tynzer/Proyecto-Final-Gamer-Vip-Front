@@ -6,7 +6,10 @@ import Nosotros from './Components/Nosotros';
 import Footer from './Components/Footer';
 import NotFound from "./Components/NotFound";
 import NavBar from "./Components/NavBar";
-import CategoriaProductos from "./Components/CategoriaProductos"
+import Youtube from "./Components/Youtube";
+import Banner2 from "./Components/Banner2";
+import Whatsapp2 from "./Components/Whatsapp2";
+import CategoriaProductos from "./Components/CategoriaProductos";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 class App extends Component {
@@ -58,6 +61,9 @@ class App extends Component {
           <Route exact path="/productos" ><Productos productos={this.state.productos} categorias={this.state.categorias} /></Route>
           <Route path="/productos/:categoria" /* component={CategoriaProductos} */ render={this.renderProductos}></Route>  
           <Route path="/nosotros"><Nosotros /></Route>
+          <Route path="/youtube"><Youtube /></Route>
+          <Route path="/banner2"><Banner2 /></Route>
+          <Route path="/whatsapp2"><Whatsapp2 /></Route>
          <Route component={NotFound}/>{/*  <Route path="*"><NotFound /></Route> */}
         </Switch>
         <Footer />
