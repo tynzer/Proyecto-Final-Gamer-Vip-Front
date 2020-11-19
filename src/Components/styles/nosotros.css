@@ -5,8 +5,24 @@
 
 .nosotros-h3-formato{
     color: white;
+    font-family: 'Fugaz One', cursive;
 }
 
 .nosotros-p-formato{
     color: white;
+    font-family: 'Fugaz One', cursive;
+}
+
+.nosotros-h5-formato{
+    color: white;
+    font-family: 'Fugaz One', cursive;
+    text-align: center;
+
+}
+
+/* cuando no esta aparece una franja blanca*/
+.nosotros-borde{
+    border: 0.5px solid transparent;
+    border-bottom: linear-gradient(to left, #ff0000, #ff0040, #ff006e, #f6009a, #d500c3, #b800b8, #9b00ad, #7f00a0, #6e0068, #51013c, #2e0a1d, #000000);
+
 }

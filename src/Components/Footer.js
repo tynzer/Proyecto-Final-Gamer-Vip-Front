@@ -5,7 +5,7 @@ import './styles/footer.css'
 class Footer extends Component {
     render() {
         return (
-                <div>
+                <div className="footer-altura">
                     <footer className="footer-borde">
                         <div className="footer-fondo">
 
