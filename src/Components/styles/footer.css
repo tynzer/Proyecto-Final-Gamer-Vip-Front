@@ -4,6 +4,12 @@
  
 }
 
+
+.footer-altura{
+  height: 120px;
+  padding: 16px;
+}
+
 /*
 .footer-borde {
     background-color: #302244;

@@ -5,9 +5,9 @@ import './styles/footer.css'
 class Footer extends Component {
     render() {
         return (
-                <div className="footer-altura">
+                <div className="">
                     <footer className="footer-borde">
-                        <div className="footer-fondo">
+                        <div className="footer-fondo footer-altura">
 
                             <div className="m-0 text-center text-white">
                                 <SocialIcon url="https://www.facebook.com/gamer.vip.arg/" target="_blank" />   <SocialIcon url="https://www.instagram.com/gamer.vip.arg/" target="_blank" />   <SocialIcon url="https://www.twitch.tv/gamerviparg" target="_blank" />
