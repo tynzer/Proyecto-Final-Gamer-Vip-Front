@@ -66,7 +66,7 @@ class App extends Component {
           <Route path="/productos/:categoria" /* component={CategoriaProductos} */ render={this.renderProductos}></Route>  
           <Route path="/nosotros"><Nosotros /></Route>
           <Route path="/youtube"><Youtube /></Route>
-          <Route path="/banner2"><Banner2 /></Route>
+          <Route path="/banner2"><Banner2 productos={this.state.productos}/></Route>
           <Route path="/whatsapp2"><Whatsapp2 /></Route>
          <Route component={NotFound}/>{/*  <Route path="*"><NotFound /></Route> */}
         </Switch>
