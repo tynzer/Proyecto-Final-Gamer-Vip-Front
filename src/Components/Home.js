@@ -16,7 +16,7 @@ class Home extends Component {
             </div>
           </div>
           <div>
-          <Banner2/>
+          <Banner2 productos={this.props.productos} />
           </div>
 
 

@@ -6,13 +6,11 @@ import Nosotros from './Components/Nosotros';
 import Footer from './Components/Footer';
 import NotFound from "./Components/NotFound";
 import NavBar from "./Components/NavBar";
-import Youtube from "./Components/Youtube";
-import Banner2 from "./Components/Banner2";
 import Whatsapp2 from "./Components/Whatsapp2";
 import CategoriaProductos from "./Components/CategoriaProductos";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Redes from "./Components/Redes"
-import Whatsapp from "./Components/Whatsapp"
+
 
 class App extends Component {
   constructor(props) {
@@ -59,15 +57,12 @@ class App extends Component {
       <Router>
         <Redes/>
         <NavBar />
-        <Whatsapp/>
+        <Whatsapp2/>
         <Switch>
-          <Route exact path="/"><Home carousel={this.state.carousel} categorias={this.state.categorias} /></Route>
+          <Route exact path="/"><Home carousel={this.state.carousel} categorias={this.state.categorias} productos={this.state.productos} /></Route>
           <Route exact path="/productos" ><Productos productos={this.state.productos} categorias={this.state.categorias} /></Route>
           <Route path="/productos/:categoria" /* component={CategoriaProductos} */ render={this.renderProductos}></Route>  
           <Route path="/nosotros"><Nosotros /></Route>
-          <Route path="/youtube"><Youtube /></Route>
-          <Route path="/banner2"><Banner2 productos={this.state.productos}/></Route>
-          <Route path="/whatsapp2"><Whatsapp2 /></Route>
          <Route component={NotFound}/>{/*  <Route path="*"><NotFound /></Route> */}
         </Switch>
         <Footer />
