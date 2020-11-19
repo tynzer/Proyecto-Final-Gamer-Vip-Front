@@ -3,7 +3,9 @@ import Banner from './Banner';
 import Categorias from './Categorias';
 import './styles/home.css'
 import Whatsapp from "./Whatsapp";
-import Banner2 from './Banner2'
+import Banner2 from './Banner2';
+import Youtube from './Youtube';
+
 class Home extends Component {
   render() {
     return (
@@ -18,12 +20,11 @@ class Home extends Component {
           <div>
           <Banner2 productos={this.props.productos} />
           </div>
-
-
           <div className="m-0 text-center pt-5" style={{ height: '750px' }}>
             <h3 className="home-fuente">LOS MEJORES PRODUCTOS </h3>
             <h3 className="home-fuente-dos">SERAS DIFERENTE, UNICO, ORIGINAL </h3>
           </div>
+          <Youtube/>
         </div>
 
       </div>
