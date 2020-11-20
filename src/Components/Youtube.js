@@ -42,6 +42,9 @@ class Youtube extends Component {
           <a href="https://www.youtube.com/watch?v=xH6dk-fA7jU" data-youtube-id="HxJhYpTIrl8" className="video-thumb js-trigger-video-modal">
             <img className="video-banner-img" src="https://i1.wp.com/codigoespagueti.com/wp-content/uploads/2020/08/china-registro-videojuegos-nombre-real-gamers-chinajoy-2020.jpg?fit=1200%2C800&quality=80&ssl=1" alt="" />
           </a>
+
+        
+
         {/*</div>
         <h2>
           Launch From Buttons &amp; Links
