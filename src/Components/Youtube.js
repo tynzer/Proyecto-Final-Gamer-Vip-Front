@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import '../youtube.css';
 import review from '../gvr.svg'
+import '../youtubejq.js';
+
+
 
 class Youtube extends Component {
     render() {
@@ -8,7 +11,7 @@ class Youtube extends Component {
             <div>
   <main>
     <section className="column left banner">
-      <a href="https://www.youtube.com/watch?v=ze_ie8Ctp60" data-youtube-id="ze_ie8Ctp60" className="video-banner js-trigger-video-modal">
+      <a href="https://www.youtube.com/watch?v=ze_ie8Ctp60" data-youtube-id="dX3k_QDnzHE" className="video-banner js-trigger-video-modal">
         <img className="video-banner-img" src="https://i.blogs.es/56b1fa/top-gamers-academy/1366_2000.jpeg" alt="" />
         <span className="video-banner-headline">
           GAMER VIP REVIEW
@@ -27,7 +30,7 @@ class Youtube extends Component {
 
         <div className="video-thumb-grid">
           {/* Daft Punk - Human After All */}
-          <a href="https://www.youtube.com/watch?v=DgLYMtG2AnM" data-youtube-id="hrB-_nIer88" className="video-thumb js-trigger-video-modal">
+          <a href="https://www.youtube.com/watch?v=gsigcc4l8EQ" data-youtube-id="dX3k_QDnzHE" className="video-thumb js-trigger-video-modal">
             <img className="video-banner-img" src="https://portinos-cloudfront.portinos.com/wp-content/uploads/2017/08/gamers-555x313.jpg" alt="" />
           </a>
           {/* M83 - Midnight City */}
@@ -36,11 +39,11 @@ class Youtube extends Component {
           </a>
           {/* Death Cab for Cutie - You Are A Tourist */}
           <a href="https://www.youtube.com/watch?v=-omlRLCc6Bc" data-youtube-id="qkk5wViJo-I" className="video-thumb js-trigger-video-modal">
-            <img className="video-banner-img" src="https://imagenes.20minutos.es/files/article_amp/uploads/2020/05/07/dota-2-es-el-juego-con-el-que-mas-dinero-ganan-los-gamers-profesionales.jpeg" alt="Death Cab for Cutie - You Are A Tourist" />
+            <img className="video-banner-img" src="https://imagenes.20minutos.es/files/article_amp/uploads/2020/05/07/dota-2-es-el-juego-con-el-que-mas-dinero-ganan-los-gamers-profesionales.jpeg" alt="" />
           </a>
           {/* José Gonzales - Heartbeats */}
-          <a href="https://www.youtube.com/watch?v=xH6dk-fA7jU" data-youtube-id="HxJhYpTIrl8" className="video-thumb js-trigger-video-modal">
-            <img className="video-banner-img" src="https://i1.wp.com/codigoespagueti.com/wp-content/uploads/2020/08/china-registro-videojuegos-nombre-real-gamers-chinajoy-2020.jpg?fit=1200%2C800&quality=80&ssl=1" alt="" />
+          <a href="https://www.youtube.com/watch?v=-omlRLCc6Bc" data-youtube-id="qkk5wViJo-I" className="video-thumb js-trigger-video-modal">
+            <img className="video-banner-img" src="https://imagenes.20minutos.es/files/article_amp/uploads/2020/05/07/dota-2-es-el-juego-con-el-que-mas-dinero-ganan-los-gamers-profesionales.jpeg" alt="" />
           </a>
 
         

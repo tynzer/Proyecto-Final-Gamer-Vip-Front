@@ -7,9 +7,11 @@ import Footer from './Components/Footer';
 import NotFound from "./Components/NotFound";
 import NavBar from "./Components/NavBar";
 import Whatsapp2 from "./Components/Whatsapp2";
+import Youtube from "./Components/Youtube";
 import CategoriaProductos from "./Components/CategoriaProductos";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Redes from "./Components/Redes"
+import '../src/youtubejq.js'
 
 
 class App extends Component {
@@ -63,6 +65,7 @@ class App extends Component {
           <Route exact path="/productos" ><Productos productos={this.state.productos} categorias={this.state.categorias} /></Route>
           <Route path="/productos/:categoria" /* component={CategoriaProductos} */ render={this.renderProductos}></Route>  
           <Route path="/nosotros"><Nosotros /></Route>
+          <Route path="/youtube"><Youtube /></Route>
          <Route component={NotFound}/>{/*  <Route path="*"><NotFound /></Route> */}
         </Switch>
         <Footer />
