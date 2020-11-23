@@ -1,6 +1,7 @@
+/*
 .texto-mayusc{
-
 }
+*/
 
 
 .titulo-color{
@@ -14,6 +15,33 @@
     text-shadow: 2px 2px 2px rgba(99, 0, 255, 1);
     -webkit-text-stroke: 0.5px rgb(233, 228, 228);
 }
+
+.banner-imagen{
+    display: block;
+    margin: auto;
+}
+
+.banner-fondo{
+    background-image: linear-gradient(to bottom, #020204, #131625, #192443, #173363, #004486);
+ }
+
+ .banner-borde{
+    background-color:rgb(255, 255, 255);
+    border: 1px solid transparent;
+    border-image: linear-gradient(to bottom right, #4027fc 0%, #2c90fc 25%, #33bafd 50%, #fe37dd 75%, #fd1892 100%);
+    border-image-slice: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
