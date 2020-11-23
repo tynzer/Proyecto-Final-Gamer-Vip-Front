@@ -1,3 +1,5 @@
+const { event } = require('jquery');
+
 window.$ = window.jQuery = require('jquery')
 
 window.$(document).ready(function(){
@@ -39,7 +41,7 @@ window.$(document).ready(function(){
 	    // Close and Reset the Video Modal
       function close_video_modal() {
         
-        Event.preventDefault();
+        event.preventDefault();
 
         // re-hide the video modal
         window.$("body").removeClass("show-video-modal noscroll");
