@@ -14,6 +14,7 @@ class CategoriaProductos extends Component {
       }
       handleClose = () => this.setState({ show: false });
       handleShow = () => this.setState({ show: true });
+      favoritoHandler = () => {}
     render() {
         return (
             <div>
@@ -46,7 +47,7 @@ class CategoriaProductos extends Component {
                                                             <Modal.Header closeButton>
                                                                 <Modal.Title>
                                                                     <img className="card-img-top" src={producto.linkImagen} alt={producto.titulo} />
-                                                                    <h4 className="card-title text-primary ">{producto.titulo}</h4>
+                                                                    <h4 className="card-title text-primary ">{producto.titulo}<i onClick={this.favoritoHandler} className="fas fa-heart text-danger" /></h4>{/*<i className="fal fa-heart"/> */}
                                                                 </Modal.Title>
                                                             </Modal.Header>
                                                             <Modal.Body>

@@ -48,7 +48,7 @@ export default class Productos extends Component {
                                                             <Modal.Header closeButton>
                                                                 <Modal.Title>
                                                                     <img className="card-img-top" src={producto.linkImagen} alt={producto.titulo} />
-                                                                    <h4 className="card-title text-primary ">{producto.titulo}</h4>
+                                                                    <h4 className="card-title text-primary ">{producto.titulo}<i className="fas fa-heart text-danger" /></h4>{/*<i className="fal fa-heart"/> */}
                                                                 </Modal.Title>
                                                             </Modal.Header>
                                                             <Modal.Body>
