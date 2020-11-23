@@ -14,8 +14,8 @@ class Banner extends Component {
           return (
 //            <div className="text-mayuscula">
               <Carousel.Item key={imagen._id} interval={imagen.intervalo}>
-                <NavLink to={"/productos/" + categoriaReplace} className="list-group-item">
-                  <img className="d-block img-fluid" src={imagen.URL} alt="First slide" />
+                <NavLink to={"/productos/" + categoriaReplace} className="list-group-item banner-fondo banner-borde">
+                  <img className="d-block img-fluid banner-imagen" src={imagen.URL} alt="First slide" />
                   <Carousel.Caption>
                     <h3 className="titulo-color">{imagen.titulo}</h3>
                     <p className="texto-color">{imagen.texto}</p>
