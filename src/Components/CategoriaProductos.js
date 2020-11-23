@@ -1,10 +1,19 @@
 import React, { Component } from 'react'
+import { Button, Modal } from 'react-bootstrap';
 import Categorias from './Categorias'
 /* import Producto from './Producto'; */
 import './styles/productos.css'
 
 class CategoriaProductos extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          show: false
     
+        }
+      }
+      handleClose = () => this.setState({ show: false });
+      handleShow = () => this.setState({ show: true });
     render() {
         return (
             <div>
@@ -28,6 +37,30 @@ class CategoriaProductos extends Component {
                                                     </div>
                                                     <div className="card-footer">
                                                         <small className="productos-estrellas">★ ★ ★ ★ ★</small>
+                                                        <div>
+                                                       <Button variant="primary" onClick={this.handleShow}>
+                                                            Ver Detalles
+                                                        </Button>
+
+                                                        <Modal show={this.state.show} onHide={this.handleClose}>
+                                                            <Modal.Header closeButton>
+                                                                <Modal.Title>
+                                                                    <img className="card-img-top" src={producto.linkImagen} alt={producto.titulo} />
+                                                                    <h4 className="card-title text-primary ">{producto.titulo}</h4>
+                                                                </Modal.Title>
+                                                            </Modal.Header>
+                                                            <Modal.Body>
+                                                                <h5>${producto.precio}</h5>
+                                                                <p className="card-text">{producto.descripcion}</p>
+                                                            </Modal.Body>
+                                                            <Modal.Footer>
+                                                                <small className="productos-estrellas">★ ★ ★ ★ ★</small>
+                                                                <Button variant="success" onClick={this.handleClose}>
+                                                                   Comprar
+                                                                </Button>
+                                                            </Modal.Footer>
+                                                        </Modal>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>    
