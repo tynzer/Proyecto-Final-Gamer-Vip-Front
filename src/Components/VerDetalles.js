@@ -29,7 +29,7 @@ class VerDetalles extends Component {
 
                 <Modal show={this.state.show} onHide={this.handleClose}>
                     <Modal.Header className="ver-detalles-header" closeButton>
-                        <Modal.Title className="ver-detalles">
+                        <Modal.Title >
                             <img className="card-img-top" src={this.props.producto.linkImagen} alt={this.props.producto.titulo} />
                             <h3 className="card-title text-primary ">{this.props.producto.titulo}<i onClick={this.favoritoHandler} className={this.state.favorito} /></h3>{/*<i className="fal fa-heart"/> */}
                         </Modal.Title>
