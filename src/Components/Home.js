@@ -4,7 +4,6 @@ import Categorias from './Categorias';
 import './styles/home.css'
 import Whatsapp from "./Whatsapp";
 import Banner2 from './Banner2';
-import Youtube from './Youtube';
 
 class Home extends Component {
   render() {
@@ -24,7 +23,7 @@ class Home extends Component {
             <h3 className="home-fuente">LOS MEJORES PRODUCTOS </h3>
             <h3 className="home-fuente-dos">SERAS DIFERENTE, UNICO, ORIGINAL </h3>
           </div>
-          <Youtube/>
+         
         </div>
 
       </div>

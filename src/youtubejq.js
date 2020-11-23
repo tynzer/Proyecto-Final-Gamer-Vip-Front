@@ -39,7 +39,7 @@ window.$(document).ready(function(){
 	    // Close and Reset the Video Modal
       function close_video_modal() {
         
-        event.preventDefault();
+        Event.preventDefault();
 
         // re-hide the video modal
         window.$("body").removeClass("show-video-modal noscroll");
