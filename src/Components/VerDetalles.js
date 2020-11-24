@@ -44,7 +44,7 @@ fetch(`${this.state.url}productos/${this.state.producto}`)
 
     render() {
         return (
-            <div>
+            <div style={{zIndex:2}}>
                 <Button variant="primary" onClick={this.handleShow}>
                     Ver Detalles
                 </Button>
