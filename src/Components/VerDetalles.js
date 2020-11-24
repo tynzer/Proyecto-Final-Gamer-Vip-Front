@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import './styles/productos.css';
-import Nav from 'react-bootstrap/Nav';
+/* import Nav from 'react-bootstrap/Nav'; */
 
 class VerDetalles extends Component {
     constructor(props) {
@@ -66,8 +66,8 @@ fetch(`${this.state.url}productos/${this.state.producto}`)
                             <h4>Comprar</h4>
                         </Button>                        
                     </Modal.Footer>
-                   {/*  <a href={this.state.linkMercadoPago}   rel = "noopener noreferrer"  target="_blank">Comprar</a> */}
-                    <Nav.Link href={this.state.linkMercadoPago}  rel = "noopener noreferrer"  target="_blank" variant="pills" >Active</Nav.Link>
+                   {/*  <a href={this.state.linkMercadoPago}   rel = "noopener noreferrer"  target="_blank">Comprar</a>
+                    <Nav.Link href={this.state.linkMercadoPago}  rel = "noopener noreferrer"  target="_blank" variant="pills" >Active</Nav.Link> */}
                 </Modal>
             </div>
         );
