@@ -1,15 +1,31 @@
 import React, { Component } from 'react';
 import { Button, Modal } from 'react-bootstrap';
-import './styles/productos.css'
+import './styles/productos.css';
+import Nav from 'react-bootstrap/Nav';
 
 class VerDetalles extends Component {
     constructor(props) {
         super(props);
         this.state = {
             show: false,
-            favorito:"far fa-heart text-danger pl-2"
+            favorito:"far fa-heart text-danger pl-2",
+            url: "https://proyecto-final-gamer-vip-back.herokuapp.com/",
+            linkMercadoPago : "",
+            producto: this.props.producto._id
         }
       }
+
+componentDidMount(){
+    console.log(this.props.producto)
+fetch(`${this.state.url}productos/${this.state.producto}`)
+      .then(res => res.json())
+      .then(linkMercadoPago => {
+        this.setState({ linkMercadoPago: linkMercadoPago.init_point });
+        console.log(linkMercadoPago)
+      })
+    }
+
+
       handleClose = () => this.setState({ show: false });
       handleShow = () => this.setState({ show: true });
       favoritoHandler = () => {
@@ -19,6 +35,12 @@ class VerDetalles extends Component {
             this.setState({favorito:"far fa-heart text-danger pl-2"});
           }
       }
+      handleClick = () => {
+          console.log(window)
+          window.open(this.state.linkMercadoPago, "_blank")
+      }
+
+
 
     render() {
         return (
@@ -40,10 +62,12 @@ class VerDetalles extends Component {
                     </Modal.Body>
                     <Modal.Footer className="ver-detalles-footer">
                         <small className="productos-estrellas">★ ★ ★ ★ ★</small>
-                        <Button variant="success" onClick={this.handleClose}>
+                        <Button variant="success" onClick={this.handleClick}>
                             <h4>Comprar</h4>
-                        </Button>
+                        </Button>                        
                     </Modal.Footer>
+                   {/*  <a href={this.state.linkMercadoPago}   rel = "noopener noreferrer"  target="_blank">Comprar</a> */}
+                    <Nav.Link href={this.state.linkMercadoPago}  rel = "noopener noreferrer"  target="_blank" variant="pills" >Active</Nav.Link>
                 </Modal>
             </div>
         );
