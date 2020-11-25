@@ -16,7 +16,7 @@ class VerDetalles extends Component {
       }
 
 componentDidMount(){
-    console.log(this.props.producto)
+    
 fetch(`${this.state.url}productos/${this.state.producto}`)
       .then(res => res.json())
       .then(linkMercadoPago => {
@@ -43,8 +43,9 @@ fetch(`${this.state.url}productos/${this.state.producto}`)
 
 
     render() {
+   
         return (
-            <div style={{zIndex:2}}>
+            <div style={{zIndex:5}}>
                 <Button variant="primary" onClick={this.handleShow}>
                     Ver Detalles
                 </Button>
@@ -57,8 +58,12 @@ fetch(`${this.state.url}productos/${this.state.producto}`)
                         </Modal.Title>
                     </Modal.Header>
                     <Modal.Body className="ver-detalles-body">
-                        <h4>${this.props.producto.precio}</h4>
+                        <h5>${this.props.producto.precio}</h5>
+                        <h4>Precio Oferta :  {this.props.producto.descuento || "Sin descuento"} </h4>  
                         <h5 className="card-text">{this.props.producto.descripcion}</h5>
+                        <h5 className="card-text">Stock : {this.props.producto.stock || "Sin stock"}</h5>
+                        <h5 className="card-text">Marca : {this.props.producto.marca}</h5>
+                       
                     </Modal.Body>
                     <Modal.Footer className="ver-detalles-footer">
                         <small className="productos-estrellas">★ ★ ★ ★ ★</small>

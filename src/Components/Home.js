@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Banner from './Banner';
 import Categorias from './Categorias';
 import './styles/home.css'
-import Whatsapp from "./Whatsapp";
 import Banner2 from './Banner2';
 
 class Home extends Component {
