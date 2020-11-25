@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Banner from './Banner';
-import Categorias from './Categorias';
 import './styles/home.css'
 import Banner2 from './Banner2';
 

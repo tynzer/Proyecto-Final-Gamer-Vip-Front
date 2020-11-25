@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import { Button, Modal } from 'react-bootstrap';
 import Categorias from './Categorias'
-/* import Producto from './Producto'; */
 import './styles/productos.css'
 import VerDetalles from './VerDetalles';
 

@@ -71,7 +71,7 @@ class Youtube extends Component {
     {/* Modal Content Wrapper */}
     <div id="video-modal-content" className="video-modal-content">
       {/* iframe */}
-      <iframe id="youtube" allow="autoplay" allowFullScreen src width="100%" height="100%" frameBorder={0} />
+      <iframe title="Youtube Frame Review" id="youtube" allow="autoplay" allowFullScreen src width="100%" height="100%" frameBorder={0} />
       <a href="#" className="close-video-modal">
         {/* X close video icon */}
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x={0} y={0} viewBox="0 0 32 32" style={{enableBackground: 'new 0 0 32 32'}} xmlSpace="preserve" width={24} height={24}>

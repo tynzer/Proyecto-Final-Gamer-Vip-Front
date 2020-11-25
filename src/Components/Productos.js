@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import { Button, Modal } from 'react-bootstrap';
 import Categorias from './Categorias'
-/* import Producto from './Producto'; */
 import './styles/productos.css'
 import VerDetalles from './VerDetalles';
 
@@ -41,7 +39,7 @@ export default class Productos extends Component {
                         <div className="row mx-5">
                         <input className="form-control mx-sm-3 mt-5" type="text" value={this.state.text} onChange={(e) => this.filter(e)} placeholder="Search" aria-label="Search" />
                         <Categorias categorias={this.props.categorias}/>
-                            <div className="col-lg-9 mt-5">
+                            <div className="col-lg-9 mt-5 " >
                                 <div className="row mt-5 ">
                                     {(this.state.productos && this.state.productos.map(producto => { 
                                         return(
@@ -57,7 +55,7 @@ export default class Productos extends Component {
                                                     </div>
                                                     <div className="card-footer">
                                                         <small className="productos-estrellas">★ ★ ★ ★ ★</small>
-                                                        <div>
+                                                        <div style={{zIndex:4}}>
                                                             <VerDetalles producto={producto}/>
                                                         </div>
                                                     </div>

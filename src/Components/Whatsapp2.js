@@ -1,4 +1,3 @@
-import React, { Component } from 'react';
 import WhatsAppWidget from 'react-whatsapp-widget'
 import './styles/whatsapp.css'
 import 'react-whatsapp-widget/dist/index.css' 
