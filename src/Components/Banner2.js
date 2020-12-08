@@ -32,6 +32,7 @@ class Banner2 extends Component {
             </div>
             <tile-slider>
               {this.props.productos.map(producto => {
+                if (producto.destacado){
                 return (
                   <game-tile href="#" onClick={(e) => {
                     e.preventDefault()
@@ -39,7 +40,7 @@ class Banner2 extends Component {
                   }} platform={producto.marca} loading="auto" image={producto.linkImagen}>
                     <h2 className="banner2-font" slot="title">{producto.titulo}</h2>
                   </game-tile>
-                )
+                )}
               })}
             </tile-slider>
           </section>

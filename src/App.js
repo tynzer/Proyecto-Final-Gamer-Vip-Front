@@ -31,12 +31,14 @@ class App extends Component {
       .then(res => res.json())
       .then(productos => {
         this.setState({ productos: productos });
+        console.log(productos)
       })
 
     fetch(`${this.state.url}categorias`)
       .then(res => res.json())
       .then(categorias => {
         this.setState({ categorias: categorias });
+        console.log(categorias)
       })
 
     fetch(`${this.state.url}carousel`)
